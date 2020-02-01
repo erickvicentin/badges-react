@@ -1,8 +1,7 @@
 import React from "react";
 
 class BadgeForm extends React.Component {
-  state = {};
-
+  //state = {};
   //handlerChange = e => {
   //  console.log({
   //    name: e.target.name,
@@ -34,7 +33,7 @@ class BadgeForm extends React.Component {
               className="form-control"
               type="text"
               name="firstName"
-              value={this.state.firstName}
+              value={this.props.formValues.firstName}
             />
           </div>
 
@@ -45,7 +44,7 @@ class BadgeForm extends React.Component {
               className="form-control"
               type="text"
               name="lastName"
-              value={this.state.lastName}
+              value={this.props.formValues.lastName}
             />
           </div>
 
@@ -56,7 +55,7 @@ class BadgeForm extends React.Component {
               className="form-control"
               type="text"
               name="email"
-              value={this.state.email}
+              value={this.props.formValues.email}
             />
           </div>
 
@@ -67,7 +66,7 @@ class BadgeForm extends React.Component {
               className="form-control"
               type="text"
               name="jobTitle"
-              value={this.state.jobTitle}
+              value={this.props.formValues.jobTitle}
             />
           </div>
 
@@ -78,7 +77,7 @@ class BadgeForm extends React.Component {
               className="form-control"
               type="text"
               name="twitter"
-              value={this.state.twitter}
+              value={this.props.formValues.twitter}
             />
           </div>
 
