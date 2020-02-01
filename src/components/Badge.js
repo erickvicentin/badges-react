@@ -1,6 +1,5 @@
 import React from "react";
 import confLogo from "../images/logo.png";
-import avatar from "../images/download.png";
 import "./styles/Badge.css";
 
 class Badge extends React.Component {
@@ -16,7 +15,7 @@ class Badge extends React.Component {
         </div>
 
         <div className="Badge__section-name">
-          <img className="Badge__avatar" src={avatar} alt="Avatar" />
+          <img className="Badge__avatar" src={this.props.avatarUrl} alt="Avatar" />
           <h1>
             {this.props.firstName} <br /> {this.props.lastName}
           </h1>
