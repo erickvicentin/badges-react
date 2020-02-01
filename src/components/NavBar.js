@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../images/logocuadrado.png";
-import './styles/NewBadge.css';
+import './styles/NavBar.css';
 
 class NavBar extends React.Component {
   render() {
