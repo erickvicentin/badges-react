@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./styles/BadgeForm.css";
 
 class BadgeForm extends React.Component {
   //state = {};
@@ -80,10 +82,26 @@ class BadgeForm extends React.Component {
               value={this.props.formValues.twitter}
             />
           </div>
-
-          <button onClick={this.handlerClick} className="btn btn-primary">
-            SAVE
-          </button>
+          <div>
+            <button
+              onClick={this.handlerClick}
+              className="btn btn-primary"
+              style={{ marginRight: 5 }}
+            >
+              SAVE
+            </button>
+            <Link
+              to="/badges"
+              className="btn btn-ttc"
+              style={{
+                marginLeft: 5,
+                color: "white",
+                backgroundColor: "red"
+              }}
+            >
+              VOLVER
+            </Link>
+          </div>
         </form>
       </div>
     );
