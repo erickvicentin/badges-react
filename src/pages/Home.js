@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/Home.css";
 import logoUTN from "../images/logo.png";
-import utnCuadrado from "../images/logocuadrado.png";
+import utnCuadrado from "../images/convencion.png";
 
 class Home extends React.Component {
   render() {

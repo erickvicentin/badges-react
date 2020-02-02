@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import confLogo from "../images/logo.png";
-import "./styles/Badges.css";
-import BadgesList from "../components/BadgesList";
 import PageLoading from "../components/PageLoading";
+import BadgesList from "../components/BadgesList";
+import PageError from "../pages/PageError";
+import confLogo from "../images/logo.png";
+import { Link } from "react-router-dom";
+import "./styles/Badges.css";
 import api from "../api";
 
 class Badges extends React.Component {
@@ -32,7 +33,7 @@ class Badges extends React.Component {
     }
 
     if (this.state.error) {
-      return `Error: ${this.state.error.message}`;
+      return <PageError error={this.state.error} />;
     }
 
     return (
