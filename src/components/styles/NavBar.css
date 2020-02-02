@@ -1,13 +1,13 @@
 .Badge_logo {
-    width: 50px;
-    height: 60px;
-    margin: 10px;
+  width: 70px;
+  height: 60px;
+  margin: 10px;
 }
 
 .Navbar {
   width: 100%;
   padding: 0.5rem 0;
-  background-color: #1C3643;
+  background-color: #1c3643;
 }
 
 .Navbar__brand {
@@ -25,4 +25,3 @@
 .Navbar__brand-logo {
   margin-right: 0.5rem;
 }
-  
