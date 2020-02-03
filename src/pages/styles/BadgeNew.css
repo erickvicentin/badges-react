@@ -5,5 +5,16 @@
   background-repeat: repeat;
   margin-bottom: 1rem;
   color: #ffffff;
-  ;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BadgeNew_hero-image {
+  max-height: 100px;
+}
+
+.Header_text {
+  font-size: large;
 }
