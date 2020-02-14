@@ -30,7 +30,7 @@ class BadgesList extends React.Component {
                   </div>
                   <Link
                     className="text-reset text-decoration-none"
-                    to={`/badges/${badge.id}/edit`}
+                    to={`/badges/${badge.id}/`}
                   >
                     <div className="Badge__infoComplete">
                       <div className="Badges_name">
