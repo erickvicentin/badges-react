@@ -1,5 +1,5 @@
 .BadgesList ul > li {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .BadgesListItem {
@@ -8,7 +8,6 @@
   border-radius: 10px;
   display: flex;
   padding: 20px;
-  margin: 10px;
   align-items: left;
   align-content: left;
   flex-direction: row;
