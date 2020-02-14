@@ -25,9 +25,7 @@ class BadgeForm extends React.Component {
   render() {
     return (
       <div>
-        <h1> Nuevo Participante </h1>
-
-        <form onSubmit={this.handlerSubmit}>
+        <form onSubmit={this.props.onSubmit}>
           <div className="form-group">
             <label> First Name</label>
             <input
@@ -101,6 +99,10 @@ class BadgeForm extends React.Component {
             >
               VOLVER
             </Link>
+
+            {this.props.error && (
+              <p className="text-danger">{this.props.error.message} </p>
+            )}
           </div>
         </form>
       </div>

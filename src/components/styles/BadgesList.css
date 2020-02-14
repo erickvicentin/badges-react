@@ -1,5 +1,5 @@
 .BadgesList ul > li {
-  margin-bottom: 1rem;
+  margin-bottom: 50px;
 }
 
 .BadgesListItem {
@@ -7,19 +7,28 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
   border-radius: 10px;
   display: flex;
-  padding: 1rem;
+  padding: 20px;
+  margin: 10px;
+  align-items: left;
+  align-content: left;
+  flex-direction: row;
 }
 
 .BadgesListItem__avatar {
   border-radius: 50%;
   background: #a3a3a3;
-  margin-right: 2rem;
+  margin-right: 5rem;
   width: 80px;
   height: 80px;
 }
 
-.Badges_Info {
+.Badges_name {
   justify-content: center;
   align-items: center;
   font-size: medium;
+}
+
+.Badge__infoComplete {
+  align-content: left;
+  padding-left: 20px;
 }

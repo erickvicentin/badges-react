@@ -29,6 +29,7 @@ const api = {
       //throw new Error("Not found data"); simula un error
     },
     create(badge) {
+      //throw new error("500: Server Error"); (para probar si capta el error)
       return callApi(`/badges`, {
         method: "POST",
         body: JSON.stringify(badge)

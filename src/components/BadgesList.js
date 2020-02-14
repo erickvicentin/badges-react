@@ -1,16 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./styles/BadgesList.css";
+import Gravatar from "./Gravatar";
+import { Link } from "react-router-dom";
 
 class BadgesList extends React.Component {
   render() {
     if (this.props.badges.length === 0) {
       return (
-        <div>
+        <div style={{ padding: 50, textAlign: "center" }}>
           <h3>No se encontraron insignias</h3>
-          <Link className="btn btn-primary" to="/badges/new">
-            Crear nueva insignia
-          </Link>
         </div>
       );
     }
@@ -19,18 +17,31 @@ class BadgesList extends React.Component {
         <ul className="list-unstyled">
           {this.props.badges.map(badge => {
             return (
-              <li key={badge.id}>
-                <div className="BadgesListItem">
-                  <div className="BadgesListItem__avatar">
-                    <img src={badge.avatarUrl} alt="" />
+              <div className="BadgesListItem">
+                <div className="row">
+                  <div className="col-3">
+                    <li key={badge.id}>
+                      <Gravatar
+                        className="BadgesListItem__avatar"
+                        email={badge.email}
+                        alt="Avatar"
+                      />
+                    </li>
                   </div>
-                  <div className="Badges_Info">
-                    {badge.firstName} <br />
-                    {badge.lastName} <br />
-                    {badge.jobTitle} <br />@{badge.twitter} <br />
-                  </div>
+                  <Link
+                    className="text-reset text-decoration-none"
+                    to={`/badges/${badge.id}/edit`}
+                  >
+                    <div className="Badge__infoComplete">
+                      <div className="Badges_name">
+                        {badge.firstName} {badge.lastName}
+                      </div>
+                      <div className="twitterID">@{badge.twitter}</div>
+                      <div className="jobTitle">{badge.jobTitle}</div>
+                    </div>
+                  </Link>
                 </div>
-              </li>
+              </div>
             );
           })}
         </ul>
